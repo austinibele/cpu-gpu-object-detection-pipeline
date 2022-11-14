@@ -36,5 +36,5 @@ class XmlParser:
         target = {}
         target["boxes"] = torch.tensor(boxes, dtype=torch.float32)
         target["names"] = names
-        target["labels"] = torch.tensor(labels, dtype=torch.uint8)
+        target["labels"] = torch.tensor(labels, dtype=torch.int64)
         return target

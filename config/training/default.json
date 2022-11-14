@@ -1,3 +1,5 @@
 {"model_type": "retinanet",
-"batch_size": 10,
-"num_workers": 5}
+"dataset_type": "military_aircraft",
+"batch_size": 2,
+"num_workers": 5,
+"learning_rate": 1e-5}

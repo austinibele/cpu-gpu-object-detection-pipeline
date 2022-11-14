@@ -15,7 +15,8 @@ services:
               driver: nvidia
     volumes:
       - .:/workspace
-  
+      - /Users/austinibele/Desktop/datasets:/workspace/data
+       
   cpu_train:
     build:
       dockerfile: services/cpu_train/Dockerfile
@@ -25,4 +26,5 @@ services:
       - PYTHONPATH=/workspace
     volumes:
       - .:/workspace
+      - /Users/austinibele/Desktop/datasets:/workspace/data
     

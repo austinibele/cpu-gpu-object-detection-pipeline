@@ -7,5 +7,5 @@ class ModelLoader:
             return retinanet_resnet50_fpn_v2(weights=RetinaNet_ResNet50_FPN_V2_Weights)
         else:
             raise NotImplementedError
-    
+
     

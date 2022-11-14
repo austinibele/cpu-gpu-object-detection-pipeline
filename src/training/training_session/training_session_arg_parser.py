@@ -5,11 +5,11 @@ class TrainingSessionArgParser(ArgumentParser):
         super().__init__()
         
         self.add_argument(
-            "--model_type",
+            "--config_path",
             type=str,
-            default="retinanet",
+            default="config/training/default.json",
             required=False,
-            help="the model type to use"
+            help="the config file for the training run"
         )
 
 

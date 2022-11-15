@@ -2,7 +2,7 @@ from pytorch_lightning import Trainer, seed_everything
 
 seed_everything(42, workers=True)
 
-class PtlTrainer:
+class PtlTrainer(Trainer):
     def __init__(self, model, train_dataloader, val_dataloader):
         self.model = model
         self.train_dataloader = train_dataloader
